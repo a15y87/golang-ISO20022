@@ -302,3 +302,9 @@ type AccountReportingRequestV03 struct {
 	Xmlns_xsi               string                   `xml:"xmlns:xsi,attr"`
 	AccountReportingRequest *AccountReportingRequest `xml:"AcctRptgReq"`
 }
+
+func (r AccountReportingRequestV03) init() {
+	r.Xmlns_xsi="http://www.w3.org/2001/XMLSchema-instance"
+	r.AccountReportingRequest = &AccountReportingRequest{}
+
+}
