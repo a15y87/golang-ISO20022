@@ -1,4 +1,4 @@
-package golang_ISO20022
+package iso20022
 
 import (
 	"encoding/xml"
